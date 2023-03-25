@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_gap">10dp</dimen>
+    <dimen name="corner_size">20dp</dimen>
+    <dimen name="elevation_size">15dp</dimen>
+    <dimen name="width_cardview">350dp</dimen>
+    <dimen name="height_cardview">200dp</dimen>
+</resources>
