@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/regular_gap"
+    tools:context=".MainActivity"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tittle_text"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:gravity="center"
+        android:text="@string/title_activity"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_size_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/counter_money"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/counter_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_gap"
+        android:gravity="center"
+        android:text="@string/counter_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_size_text"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittle_text" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_nickle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_gap"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linear_layout_dime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counter_money">
+
+        <ImageButton
+            android:id="@+id/imageButton_nickle"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:background="@drawable/five_cents"
+            android:padding="@dimen/regular_gap"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="297dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_gap"
+            android:text="@string/nickel_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_size_text"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton_nickle"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="@+id/imageButton_nickle"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton_nickle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_dime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linear_layout_nickle"
+        app:layout_constraintTop_toTopOf="@+id/linear_layout_nickle">
+
+        <ImageButton
+            android:id="@+id/imageButton_dime"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:background="@drawable/ten_cents"
+            android:padding="@dimen/regular_gap"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="297dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_gap"
+            android:text="@string/dime_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_size_text"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton_nickle"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="@+id/imageButton_nickle"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton_nickle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_quarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_gap"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linear_layout_dollar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_nickle">
+
+        <ImageButton
+            android:id="@+id/imageButton_quarter"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:background="@drawable/quarter"
+            android:padding="@dimen/regular_gap"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="297dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_gap"
+            android:text="@string/quarter_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_size_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_dollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linear_layout_quarter"
+        app:layout_constraintTop_toTopOf="@+id/linear_layout_quarter">
+
+        <ImageButton
+            android:id="@+id/imageButton_dollar"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:background="@drawable/one_dollar"
+            android:padding="@dimen/regular_gap"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_gap"
+            android:text="@string/dollar_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_size_text"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

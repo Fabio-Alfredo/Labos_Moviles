@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="img_size">96dp</dimen>
+    <dimen name="large_gap">40dp</dimen>
+    <dimen name="large_size_text">48sp</dimen>
+    <dimen name="medium_gap">32dp</dimen>
+    <dimen name="medium_size_text">24sp</dimen>
+    <dimen name="regular_gap">16dp</dimen>
+    <dimen name="small_size_text">12sp</dimen>
+    <string name="app_name">Labo03</string>
+    <string name="counter_text">0</string>
+    <string name="dime_text">$0.10</string>
+    <string name="dollar_text">$1.00</string>
+    <string name="money_value">$ %s</string>
+    <string name="nickel_text">$0.05</string>
+    <string name="quarter_text">$0.25</string>
+    <string name="title_activity">Cantidad de dinero</string>
+    <style name="Theme.Laboratprop" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

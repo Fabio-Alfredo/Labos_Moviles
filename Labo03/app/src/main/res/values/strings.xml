@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Labo03</string>
+    <string name="title_activity">Cantidad de dinero</string>
+    <string name="counter_text">0</string>
+    <string name="nickel_text">$0.05</string>
+    <string name="dime_text">$0.10</string>
+    <string name="quarter_text">$0.25</string>
+    <string name="dollar_text">$1.00</string>
+    <string name="money_value">$ %s</string>
+
+</resources>
