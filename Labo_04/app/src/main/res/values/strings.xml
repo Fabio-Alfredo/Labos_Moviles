@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Labo04</string>
+    <string name="tittle_app">Rellena la siguiente información</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_email">Correo electronico</string>
+    <string name="hint_cellphone_number">Número de teléfono</string>
+    <string name="share_text">Name: %1$s \nEmail %2$s \nPhone: %3$s</string>
+    <string name="share_hint_text">Compartir</string>
+    <string name="save_btnText">Guardar</string>
+    <string name="confirmation_text">Confirma tu información</string>
+    <string name="ex_email_text">digidoro4u@hotmail.com</string>
+    <string name="share_BtnText">Compartir</string>
+</resources>
