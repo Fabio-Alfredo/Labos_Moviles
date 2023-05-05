@@ -14,6 +14,7 @@ import com.example.laboratorio_06.data.model.movies
 import com.example.laboratorio_06.repositories.MovieRepository
 
 class NewMovieFragment : Fragment() {
+
     private lateinit var btnSubmit : Button
     private lateinit var editTextName : EditText
     private lateinit var editTextCategory : EditText
