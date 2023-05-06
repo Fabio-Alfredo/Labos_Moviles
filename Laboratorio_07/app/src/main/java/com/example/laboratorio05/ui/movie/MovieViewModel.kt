@@ -42,6 +42,8 @@ class MovieViewModel(private val repository: MovieRepository) : ViewModel(){
 
         addMovies(movie)
         clearData()
+
+        status.value = MOVIE_CREATED
     }
 
     private fun validateData(): Boolean {
